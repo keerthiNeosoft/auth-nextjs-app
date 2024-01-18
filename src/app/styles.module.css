@@ -1,0 +1,105 @@
+.header {
+    margin: 10px;
+    padding: 10px;
+}
+
+.header * {
+    padding: 20px 40px;
+    text-decoration: none;
+    color:blue;
+    font-weight: 600;
+    font-size: large;
+}
+
+.header *:hover {
+    border-bottom: 5px solid #add;
+    color:blueviolet;
+}
+
+.activeTab {
+    background-color: rgb(234, 228, 228);
+}
+
+.homepageDiv {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 25px;
+    justify-content: space-around;
+}
+
+.cardStyles {
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid #add;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transition: 0.15s;
+}
+
+.cardStyles:hover {
+    transform: scale(1.05);
+    border: 1px solid rgb(35, 20, 39);
+}
+
+.cardStyles * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+.cardStyles .title {
+    font-weight: 700;
+}
+
+.cardStyles .price {
+    background-color: darkblue;
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 10px;
+}
+.cardStyles .releaseDate {
+    font-weight: 500;
+    border-bottom: 3px solid chocolate;
+}
+
+.cardStyles .bookButton {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.cardStyles .bookButton:hover {
+    cursor: pointer;
+    box-shadow:
+        0 0 0 5px rgb(214, 211, 211),
+        0 0 0 10px #04AA6D;
+}
+
+.inputText {
+    margin: auto;
+    border-radius: 50px;
+    box-shadow: inset 0px 0px 5px rgb(206, 203, 203);
+    width:55%;
+    border: none;
+    transform: 0.2s;
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .inputText:focus {
+    box-shadow: 0 2px 15px 2px rgb(25, 166, 231);
+    outline: none;
+    transform: scale(1, 1.03);
+  }
